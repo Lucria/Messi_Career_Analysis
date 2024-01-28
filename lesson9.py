@@ -1,4 +1,4 @@
-# Create a string variable 
+# Create a string variable
 # Create a integer variable
 # Print the string varaible * integer variable
 restaurants = "Burger King"
@@ -49,7 +49,7 @@ hours = 45
 
 if hours <= 40:
     pay = hours*rate
-else: 
+else:
     pay = hours*rate*2
 
 print(pay)
@@ -67,8 +67,8 @@ print("")
 
 list1 = [0, 1, 2, 3, 4, 5] # range(0, 6)
 
-list3 = list1[:] # copy the list 
-list4 = list1[2:] # 2, 3, 4, 5 
+list3 = list1[:] # copy the list
+list4 = list1[2:] # 2, 3, 4, 5
 list5 = list1[:4] # 0, 1, 2, 3
 print(list3)
 print(list4)
@@ -85,7 +85,7 @@ m = [[1,2,3],[4,5,6],[7,8,9]]
 s = i = 0
 size = 3
 while i < size: # i is column
-    j = 0 # j is row 
+    j = 0 # j is row
     while j < size:
         s += m[j][i] # It will go down by each row
         j += 1

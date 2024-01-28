@@ -1,0 +1,223 @@
+{
+    "area":{
+       "id":2072,
+       "name":"England",
+       "code":"ENG",
+       "flag":"https://crests.football-data.org/770.svg"
+    },
+    "id":61,
+    "name":"Chelsea FC",
+    "shortName":"Chelsea",
+    "tla":"CHE",
+    "crest":"https://crests.football-data.org/61.png",
+    "address":"Fulham Road London SW6 1HS",
+    "website":"http://www.chelseafc.com",
+    "founded":1905,
+    "clubColors":"Royal Blue / White",
+    "venue":"Stamford Bridge",
+    "runningCompetitions":[
+       {
+          "id":2021,
+          "name":"Premier League",
+          "code":"PL",
+          "type":"LEAGUE",
+          "emblem":"https://crests.football-data.org/PL.png"
+       },
+       {
+          "id":2139,
+          "name":"Football League Cup",
+          "code":"FLC",
+          "type":"CUP",
+          "emblem":"https://crests.football-data.org/FLC.png"
+       }
+    ],
+    "coach":{
+       "id":11609,
+       "firstName":"Mauricio",
+       "lastName":"Pochettino",
+       "name":"Mauricio Pochettino",
+       "dateOfBirth":"1972-03-02",
+       "nationality":"Argentina",
+       "contract":{
+          "start":"2023-07",
+          "until":"2025-06"
+       }
+    },
+    "squad":[
+       {
+          "id":3953,
+          "name":"Marcus Bettinelli",
+          "position":"Goalkeeper",
+          "dateOfBirth":"1992-05-24",
+          "nationality":"England"
+       },
+       {
+          "id":121765,
+          "name":"Đorđe Petrović",
+          "position":"Goalkeeper",
+          "dateOfBirth":"1999-10-08",
+          "nationality":"Serbia"
+       },
+       {
+          "id":135555,
+          "name":"Robert Sánchez",
+          "position":"Goalkeeper",
+          "dateOfBirth":"1997-11-18",
+          "nationality":"Spain"
+       },
+       {
+          "id":179663,
+          "name":"Lucas Bergström",
+          "position":"Goalkeeper",
+          "dateOfBirth":"2002-09-05",
+          "nationality":"Finland"
+       },
+       {
+          "id":813,
+          "name":"Axel Disasi",
+          "position":"Defence",
+          "dateOfBirth":"1998-03-11",
+          "nationality":"France"
+       },
+       {
+          "id":3224,
+          "name":"Thiago Silva",
+          "position":"Defence",
+          "dateOfBirth":"1984-09-22",
+          "nationality":"Brazil"
+       },
+       {
+          "id":7810,
+          "name":"Trevoh Chalobah",
+          "position":"Defence",
+          "dateOfBirth":"1999-07-05",
+          "nationality":"England"
+       },
+       {
+          "id":8065,
+          "name":"Ben Chilwell",
+          "position":"Defence",
+          "dateOfBirth":"1996-12-21",
+          "nationality":"England"
+       },
+       {
+          "id":8424,
+          "name":"Malang Sarr",
+          "position":"Defence",
+          "dateOfBirth":"1999-01-23",
+          "nationality":"France"
+       },
+       {
+          "id":8545,
+          "name":"Wesley Fofana",
+          "position":"Defence",
+          "dateOfBirth":"2000-12-17",
+          "nationality":"France"
+       },
+       {
+          "id":15863,
+          "name":"Cucurella",
+          "position":"Defence",
+          "dateOfBirth":"1998-07-22",
+          "nationality":"Spain"
+       },
+       {
+          "id":56628,
+          "name":"Reece James",
+          "position":"Defence",
+          "dateOfBirth":"1999-12-08",
+          "nationality":"England"
+       },
+       {
+          "id":152498,
+          "name":"Malo Gusto",
+          "position":"Defence",
+          "dateOfBirth":"2003-05-19",
+          "nationality":"France"
+       },
+       {
+          "id":170426,
+          "name":"Benoît Badiashile",
+          "position":"Defence",
+          "dateOfBirth":"2001-03-26",
+          "nationality":"France"
+       },
+       {
+          "id":170440,
+          "name":"Levi Colwill",
+          "position":"Defence",
+          "dateOfBirth":"2003-02-26",
+          "nationality":"England"
+       },
+       {
+          "id":179698,
+          "name":"Dylan Williams",
+          "position":"Defence",
+          "dateOfBirth":"2003-09-13",
+          "nationality":"England"
+       },
+       {
+          "id":189625,
+          "name":"Ishe Samuels-Smith",
+          "position":"Defence",
+          "dateOfBirth":"2006-06-05",
+          "nationality":"England"
+       },
+       {
+          "id":206825,
+          "name":"Alfie Gilchrist",
+          "position":"Defence",
+          "dateOfBirth":"2003-11-28",
+          "nationality":"England"
+       },
+       {
+          "id":221263,
+          "name":"Joshua Brooking",
+          "position":"Defence",
+          "dateOfBirth":"2002-09-01",
+          "nationality":"England"
+       },
+       {
+          "id":8484,
+          "name":"Christopher Nkunku",
+          "position":"Midfield",
+          "dateOfBirth":"1997-11-14",
+          "nationality":"France"
+       },
+       {
+          "id":98978,
+          "name":"Mykhailo Mudryk",
+          "position":"Midfield",
+          "dateOfBirth":"2001-01-05",
+          "nationality":"Ukraine"
+       },
+       {
+          "id":102603,
+          "name":"Enzo Fernández",
+          "position":"Midfield",
+          "dateOfBirth":"2001-01-17",
+          "nationality":"Argentina"
+       },
+       {
+          "id":119265,
+          "name":"Conor Gallagher",
+          "position":"Midfield",
+          "dateOfBirth":"2000-02-06",
+          "nationality":"England"
+       },
+       {
+          "id":121103,
+          "name":"Moisés Caicedo",
+          "position":"Midfield",
+          "dateOfBirth":"2001-11-02",
+          "nationality":"Ecuador"
+       },
+       {
+          "id":144892,
+          "name":"Cole Palmer",
+          "position":"Midfield",
+          "dateOfBirth":"2002-05-06",
+          "nationality":"England"
+       }
+    ]
+}

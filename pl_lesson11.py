@@ -29,14 +29,14 @@ class FootballInfo:
         print("UNDONE")
 
 
-
 api_key = input("Please input your API key:")
 footballInfo = FootballInfo(api_key) # Create an object of the class FootballInfo
+
 footballInfo.get_team_information("61")
 
 
 ########################################################################
-# ! Playground
+# ! Playground (Inheritance)
 
 # class Fruit:
 #     # Constructor
@@ -48,17 +48,22 @@ footballInfo.get_team_information("61")
 #     def display_info(self):
 #         print(f"{self.name.capitalize()} is a {self.color} fruit with a {self.taste} taste.")
 
+
 # # Child class - Inherits from parent class Fruit
 # class TropicalFruit(Fruit):
+#     def __init__(self, name, color, taste, region):
+#         super().__init__(name, color, taste)
+#         self.region = region
+
 #     def display_info(self):
 #         super().display_info()
-#         print(f"This is a tropical fruit")
+#         print(f"This is a tropical fruit in {self.region}")
 
 # # Example usage:
 # apple = Fruit("apple", "red", "sweet")
 # banana = Fruit("banana", "yellow", "sweet and creamy")
 # orange = Fruit("orange", "orange", "citrusy")
-# mango = TropicalFruit("mango", "yellow", "sweet")
+# mango = TropicalFruit("mango", "yellow", "sweet", "Asia")
 
 # # Display information about the fruits
 # apple.display_info()

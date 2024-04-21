@@ -49,22 +49,32 @@
 
 
 ########################################################################
-# ! Playground (Polymorphism)
-# # Length of a string
-# text = "Python"
-# print(len(text))  # Output: 6
+# ! Playground (Simple Program)
+# TODO write a program to analyze text
+# Count the number of words, vowels and consonants
 
-# # Length of a list
-# numbers = [1, 2, 3]
-# print(len(numbers))  # Output: 3
+# "I am going outside." -> 4 words, 5 vowels, ?? consonants
+# Vowels is aeiou
+# Consonants are just everything else that is an alphabet
 
-def add(x, y = 0, z = 0):
-    return x + y + z
+"I am going outside"
+# Quick Two Line Codes
+countOfWords = len("I am going outside.".split())
+print("Count of Words in the given Sentence:", countOfWords)
 
-# Driver code
-print(add(2))
-print(add(2, 3)) # Output: 5
-print(add(2, 3, 4)) # Output: 9
+# TODO fix logic
+countOfVowels = 0
+for character in "I am going outside":
+    countOfVowels += len(character.split())
+print("Count of Vowels in the given Sentence:", countOfVowels)
+countOfConsonants = 0
+countOfConsonants += len(character.split())
+
+if character in "aeiou":
+    print(countOfVowels)
+else:
+    print(countOfConsonants)
+
 
 
 ########################################################################

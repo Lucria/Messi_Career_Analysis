@@ -1,112 +1,48 @@
-# import requests
+def calculator():
+    print("Simple Calculator")
+    print("Enter 'q' to quit")
 
-# class FootballMatchInfo:
-#     def __init__(self, api_key):
-#         self.api_key = api_key
-#         self.base_url = "https://api.football-data.org/v2/"
-#         self.headers = {"X-Auth-Token": api_key}
+    while True:
+        # Take input from the user
+        user_input = input("Enter calculation (e.g., 5 + 10): ")
 
-#     def get_upcoming_matches(self, team_name):
-#         endpoint = f"teams/{team_name}/matches"
-#         params = {"status": "SCHEDULED"}
+        # Check if the user wants to quit
+        if user_input.lower() == 'q':
+            print("Exiting the calculator. Goodbye!")
+            break
 
-#         response = requests.get(f"{self.base_url}{endpoint}", headers=self.headers, params=params)
+        try:
+            # Split the user input into components
+            parts = user_input.split()
 
-#         if response.status_code == 200:
-#             matches = response.json()["matches"]
-#             return matches
-#         else:
-#             print(f"Error: {response.status_code}")
-#             return None
+            if len(parts) != 3:
+                raise ValueError("Invalid input format. Please enter in the format: number1 operator number2")
 
-#     def display_match_info(self, matches):
-#         if not matches:
-#             print("No upcoming matches.")
-#             return
+            num1, operator, num2 = parts
 
-#         print("Upcoming Football Matches:")
-#         for match in matches:
-#             home_team = match["homeTeam"]["name"]
-#             away_team = match["awayTeam"]["name"]
-#             date_time = match["utcDate"]
+            # Convert the string numbers to floats
+            num1 = float(num1)
+            num2 = float(num2)
 
-#             print(f"{home_team} vs {away_team} on {date_time}")
+            # Perform the calculation based on the operator
+            if operator == '+':
+                result = num1 + num2
+            elif operator == '-':
+                result = num1 - num2
+            elif operator == '*':
+                result = num1 * num2
+            elif operator == '/':
+                if num2 == 0:
+                    raise ValueError("Division by zero is not allowed")
+                result = num1 / num2
+            else:
+                raise ValueError("Invalid operator. Please use one of the following: +, -, *, /")
 
-# if __name__ == "__main__":
-#     # Get your API key from https://www.football-data.org/
-#     api_key = "your_api_key_here"
+            # Print the result
+            print(f"Result: {result}")
 
-#     # Example Usage
-#     match_info = FootballMatchInfo(api_key)
+        except ValueError as e:
+            print(f"Error: {e}")
 
-#     # Replace "arsenal" with the desired team name (lowercase)
-#     upcoming_matches = match_info.get_upcoming_matches("arsenal")
-
-#     match_info.display_match_info(upcoming_matches)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def analyze_text(text):
-  """
-  This function analyzes a text and returns the number of words, vowels, and consonants.
-
-  Args:
-      text: A string containing the text to analyze.
-
-  Returns:
-      A dictionary containing the number of words, vowels, and consonants.
-  """
-  # Convert the text to lowercase for case-insensitive analysis
-  text = text.lower()
-
-  # Split the text into words
-  words = text.split()
-
-  # Initialize counters
-  vowel_count = 0
-  consonant_count = 0
-
-  # Loop through each character in the text
-  for char in text:
-    # Check if character is a letter
-    if char.isalpha():
-      # Check for vowels
-      if char in "aeiou":
-        vowel_count += 1
-      else:
-        consonant_count += 1
-
-  # Return the analysis results in a dictionary
-  return {
-    "words": len(words),
-    "vowels": vowel_count,
-    "consonants": consonant_count
-  }
-
-# Get text input from the user
-text = input("Enter some text to analyze: ")
-
-# Analyze the text and get results
-analysis_result = analyze_text(text)
-
-# Print the analysis results
-print(f"\nAnalysis Results:")
-print(f"  Number of words: {analysis_result['words']}")
-print(f"  Number of vowels: {analysis_result['vowels']}")
-print(f"  Number of consonants: {analysis_result['consonants']}")
-
-
-
-
-
+# Run the calculator
+calculator()
